@@ -1,0 +1,69 @@
+.page-header {
+
+}
+
+.hamburger-box {
+    border-left: .1rem solid $border-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+    height: 7rem;
+    width: 7rem;
+    z-index: 1100;
+
+    &.is-active{
+        .hamburger-inner{
+            transition-delay: .12s;
+            transition-timing-function: cubic-bezier(.215,.61,.355,1);
+            transform: rotate(45deg);
+
+            &:before{
+                transition: top 75ms ease,opacity 75ms ease .12s;
+                opacity: 0;
+                top: 0;
+            }
+            &:after{
+                transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+                transform: rotate(-90deg);
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.hamburger-inner:after, .hamburger-inner:before {
+    display: block;
+    content: "";
+}
+
+%ham-inner{
+    width: 2.8rem;
+    height: .2rem;
+    background-color: $black;
+    transition: transform .15s ease;
+    border-radius: 1.5px;
+}
+
+.hamburger-inner {
+    @extend %ham-inner;
+    position: relative;
+    display: block;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: 75ms;
+
+    &:before{
+        @extend %ham-inner;
+        position: absolute;
+        top: -.8rem;
+        transition: top 75ms ease .12s,opacity 75ms ease;
+    }
+    &:after{
+        @extend %ham-inner;
+        position: absolute;
+        bottom: -.8rem;
+        transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+    }
+}
