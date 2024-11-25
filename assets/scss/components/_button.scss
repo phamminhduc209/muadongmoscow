@@ -1,6 +1,6 @@
 .btn {
     display: inline-block;
-    font-family: $btn-font-family;
+    // font-family: $btn-font-family;
     font-weight: $btn-font-weight;
     color: $body-color;
     text-align: center;
@@ -11,7 +11,7 @@
     border: $btn-border-width solid transparent;
 
     @include hover() {
-        color: $body-color;
+        // color: $body-color;
         text-decoration: none;
     }
 
@@ -28,5 +28,30 @@
 
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
+    }
+
+    &-buy {
+        background: url('../images/fancy_button.png') no-repeat center / cover;
+        font-weight: $font-weight-bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include mq('md', min) {
+            font-size: rem(24px);
+            width: rem(160px);
+            height: rem(76px);
+        }
+
+        &--white {
+            background-image: url('../images/fancy_button_light.png');
+            color: $dark;
+
+            @include mq('md', min) {
+                width: rem(180px);
+                height: rem(86px);
+            }
+        }
     }
 }

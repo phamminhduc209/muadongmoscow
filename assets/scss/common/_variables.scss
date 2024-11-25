@@ -7,7 +7,7 @@ block,
 flex !default;
 
 $grid-breakpoints: (xs: 0,
-  sm: 576px,
+  sm: 460px,
   md: 768px,
   lg: 992px,
   xl: 1200px) !default;
@@ -18,23 +18,25 @@ $spacers: () !default;
 $spacers: map-merge((0: 0,
     5: ($spacer * .5),
     10: ($spacer * 1),
+    15: ($spacer * 1.5),
     20: ($spacer * 2),
     30: ($spacer * 3),
+    36: ($spacer * 3.6),
     40: ($spacer * 4),
     50: ($spacer * 5)),
   $spacers);
 
 //font
-$font-Trirong: 'Trirong',
-serif;
+$font-Trirong: 'Trirong', serif;
 
 $font-weight-bold: 700;
+$font-weight-somibold: 600;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 
 $font-size-reset: 10px !default;
-$font-family-base: "Trirong,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol";
+// $font-family-base: Trirong, -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 $font-size-base: 16px !default;
 $line-height-base: 1.5;
 $font-weight-base: $font-weight-regular;
@@ -54,7 +56,7 @@ $border-color: $gray-300 !default;
 $btn-disabled-opacity: .6;
 $btn-border-width: 1px !default;
 $btn-font-weight: $font-weight-regular;
-$btn-font-family: $font-family-base;
+// $btn-font-family: $font-family-base;
 
 // Table
 $table-th-font-weight: $font-weight-base;
@@ -63,7 +65,7 @@ $table-th-font-weight: $font-weight-base;
 $input-height: 50px !default;
 $input-padding-y: 5px !default;
 $input-padding-x: 10px !default;
-$input-font-family: $font-family-base;
+// $input-font-family: $font-family-base;
 $input-bg: $white;
 $input-border-width: 1px;
 $input-border-color: $border-color;

@@ -11,97 +11,208 @@
 	<title>{[#SITE_TITLE#]}</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600;700;800&display=swap"
-		rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="base-bg">
-	<header class="p-header">
-		<div class="container">
-			<div class="p-header__wrap">
-				<div class="p-header__logo">
-					<p class="text-center">ĐƠN VỊ TỔ CHỨC</p>
-					<div class="list-logo">
-						<img alt="Provider" srcset="./assets/images/no_rm_logo.png 1x, ./assets/images/no_rm_logo.png 2x" class="list-logo__item" style="filter:invert(1);" src="./assets/images/no_rm_logo.png">
-						<img alt="Provider" srcset="./assets/images/logo_4.png 1x, ./assets/images/logo_4.png 2x" class="list-logo__item" src="./assets/images/logo_4.png">
-						<img alt="Provider" srcset="./assets/images/logo_3.webp 1x, ./assets/images/logo_3.webp 2x" class="list-logo__item" src="./assets/images/logo_3.webp">
-					</div>
-				</div>
-				<div class="p-header__nav">
-					<nav class="menu">
-						<ul class="menu-list">
-							<li class="menu-item"><a href="/checkout.html" class="menu-link anchor-link">Mua vé</a></li>
-							<li class="menu-item"><a href="#about" class="menu-link anchor-link">Giới thiệu</a></li>
-							<li class="menu-item"><a href="#artist" class="menu-link anchor-link">Nghệ sĩ</a></li>
-							<li class="menu-item"><a href="#guide" class="menu-link anchor-link">Hướng dẫn</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<main class="main">
-		<div class="p-mv">
+	<div class="bg-gray">
+		<header class="p-header">
 			<div class="container">
-				<div class="p-mv__wrap">
-					<div class="p-mv__media">
-						<img alt="Singers" srcset="./assets/images/main.webp 1x, ./assets/images/main.webp 2x" class="mx-auto lg:mx-0 px-2 md:px-0 w-full md:w-3/4 lg:w-1/2 opacity-95 object-cover aspect-[784/927]" src="./assets/images/main.webp">
-					</div>
-					<div class="p-mv__content">
-						<div class="media">
-							<img alt="Singers" srcset="./assets/images/img.png 1x, ./assets/images/img.png 2x" class="object-cover" src="./assets/images/img.png">
-						</div>
-						<div class="des">
-							<div class="des-dt">
-								<div class="des-dt__name"> Nhà Hàng Cửu Long </div>
-								<div class="des-dt__txt"> Белореченская 14, Москва, 109559 </div>
-								<div class="des-dt__txt"> (Метро: Люблино) </div>
-								<div class="des-dt__txt"> Tầng 2 Trung tâm thương mại </div>
-								<div class="des-dt__txt">15.12 | 18:00</div>
-								<div class="des-dt__copy"> Copy </div>
-							</div>
-							<div class="des-dt">
-								<div class="des-dt__name"> Trung tâm tiệc Гранат Холл </div>
-								<div class="des-dt__txt"> Цимлянская ул, 2А, Москва </div>
-								<div class="des-dt__txt"> (этаж 2, 3) </div>
-								<div class="des-dt__txt"> Đối diện вход 2 chợ Liublino </div>
-								<div class="des-dt__txt">16.12 và 17.12 | 18:00</div>
-								<div class="des-dt__copy"> Copy </div>
-							</div>
-							<div class="lg:text-2xl flex justify-center mt-6 text-white font-bold"><button class="uppercase relative"><img onerror="this.setAttribute('data-error', 1)" alt="buyticket" data-nuxt-img="" srcset="./assets/images/fancy_button.png 1x, ./assets/images/fancy_button.png 2x" class="w-[100px] lg:w-[160px] object-cover aspect-[288/138]" src="./assets/images/fancy_button.png"><span class="absolute cs__center__y cs__center__x whitespace-nowrap"> Mua vé </span></button></div>
+				<div class="p-header__wrap">
+					<div class="p-header__logo">
+						<p class="text-center">ĐƠN VỊ TỔ CHỨC</p>
+						<div class="list-logo">
+							<img alt="Provider" srcset="./assets/images/no_rm_logo.png 1x, ./assets/images/no_rm_logo.png 2x" class="list-logo__item" style="filter:invert(1);" src="./assets/images/no_rm_logo.png">
+							<img alt="Provider" srcset="./assets/images/logo_4.png 1x, ./assets/images/logo_4.png 2x" class="list-logo__item" src="./assets/images/logo_4.png">
+							<img alt="Provider" srcset="./assets/images/logo_3.webp 1x, ./assets/images/logo_3.webp 2x" class="list-logo__item" src="./assets/images/logo_3.webp">
 						</div>
 					</div>
+					<div class="p-header__nav">
+						<nav class="menu">
+							<ul class="menu-list">
+								<li class="menu-item"><a href="/checkout.html" class="menu-link anchor-link">Mua vé</a></li>
+								<li class="menu-item"><a href="#about" class="menu-link anchor-link">Giới thiệu</a></li>
+								<li class="menu-item"><a href="#artist" class="menu-link anchor-link">Nghệ sĩ</a></li>
+								<li class="menu-item"><a href="#guide" class="menu-link anchor-link">Hướng dẫn</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="about">
-			<div class="container">
-				<h2>Giới Thiệu</h2>
+		</header>
+	
+		<main class="main">
+			<div class="p-mv">
+				<div class="container">
+					<div class="p-mv__wrap">
+						<div class="p-mv__media">
+							<img alt="Singers" srcset="./assets/images/main.webp 1x, ./assets/images/main.webp 2x" class="mx-auto lg:mx-0 px-2 md:px-0 w-full md:w-3/4 lg:w-1/2 opacity-95 object-cover aspect-[784/927]" src="./assets/images/main.webp">
+						</div>
+						<div class="p-mv__content">
+							<div class="media">
+								<img alt="Singers" srcset="./assets/images/img.png 1x, ./assets/images/img.png 2x" class="object-cover" src="./assets/images/img.png">
+							</div>
+							<div class="des">
+								<div class="des-dt">
+									<div class="des-dt__name"> Nhà Hàng Cửu Long </div>
+									<div class="des-dt__txt"> Белореченская 14, Москва, 109559 </div>
+									<div class="des-dt__txt"> (Метро: Люблино) </div>
+									<div class="des-dt__txt"> Tầng 2 Trung tâm thương mại </div>
+									<div class="des-dt__txt">15.12 | 18:00</div>
+									<div class="des-dt__copy"> Copy </div>
+								</div>
+								<div class="des-dt mt-20">
+									<div class="des-dt__name"> Trung tâm tiệc Гранат Холл </div>
+									<div class="des-dt__txt"> Цимлянская ул, 2А, Москва </div>
+									<div class="des-dt__txt"> (этаж 2, 3) </div>
+									<div class="des-dt__txt"> Đối diện вход 2 chợ Liublino </div>
+									<div class="des-dt__txt">16.12 và 17.12 | 18:00</div>
+									<div class="des-dt__copy"> Copy </div>
+								</div>
+								<div class="des-btn">
+									<button class="btn btn-buy mt-20 mx-auto">Mua vé</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div id="artist">
-			<div class="container">
-				<h2>Nghệ sĩ</h2>
+			<div id="about" class="p-sec p-about">
+				<div class="container">
+					<h2 class="hline02 text-center text-uppercase">Giới thiệu chương trình</h2>
+					<div class="p-about__box">
+						<p>MÙA ĐÔNG MOSCOW 2024 - SỰ KIỆN ĐÁNG MONG ĐỢI DÀNH CHO CỘNG ĐỒNG NGƯỜI VIỆT TẠI NGA!</p>
+						<p class="mt-15">Mùa Đông Moscow 2024 sẽ diễn ra vào ngày 15, 16 và 17 tháng 12 tại hai địa điểm nổi bật: Nhà Hàng Cửu Long và Trung tâm tiệc Гранат Холл. Đây là sự kiện hội tụ những ngôi sao hàng đầu như <strong>Ưng Hoàng Phúc</strong>, <strong>Ưng Đại Vệ</strong>, <strong>Châu Dương</strong>, cùng sự dẫn dắt duyên dáng của MC Louis A và phần biểu diễn sôi động của <strong>DJ Stty</strong>. Bạn sẽ được trải nghiệm một không gian lễ hội bùng nổ với âm nhạc đỉnh cao, thưởng thức tiệc buffet sang trọng với những món ăn đậm chất Việt Nam, đồng thời giao lưu trực tiếp cùng các nghệ sĩ để lưu lại những khoảnh khắc đáng nhớ. Đặc biệt, chương trình còn mang đến cơ hội may mắn với phần bốc thăm trúng thưởng, nơi bạn có thể sở hữu những phần quà giá trị như máy lọc không khí hiện đại và bình đun nước điện tử.</p>
+						<p class="mt-15">Chương trình bắt đầu từ 18:00 với tiệc buffet chào đón khách, tiếp nối là các tiết mục biểu diễn nghệ thuật đầy cảm xúc từ 19:00 đến 22:00. Sau đó, bạn sẽ được tham gia giao lưu cùng các nghệ sĩ và DJ, trước khi đến phần bốc thăm trúng thưởng hấp dẫn vào lúc 22:10. Đêm tiệc khép lại với màn trình diễn DJ đầy sôi động từ 22:30 đến 01:30.</p>
+						<p class="mt-15">Số lượng vé có hạn, hãy nhanh tay đặt ngay để cùng gia đình và bạn bè tận hưởng không khí lễ hội ấm áp và đẳng cấp tại Mùa Đông Moscow 2024!</p>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div id="guide">
-			<div class="container">
-				<h2>Hướng dẫn</h2>
+			<div class="p-sec p-stage">
+				<div class="container">
+					<h2 class="hline02 text-center text-uppercase">Sân khấu</h2>
+					<div class="swiper swiper-cards">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./assets/images/1.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/2.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/3.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/4.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/5.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/6.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/7.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/8.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/9.jpeg" class="object-cover" alt="muadongmoscow"></div>
+							<div class="swiper-slide"><img src="./assets/images/10.jpeg" class="object-cover" alt="muadongmoscow"></div>
+						</div>
+					</div>
+					<div>
+						<a href="#" class="btn btn-buy btn-buy--white mt-50 mx-auto">Mua Vé</a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</main>
+	
+			<div id="artist" class="p-sec p-artist">
+				<div class="container">
+					<h2 class="hline02 text-center text-uppercase mb-36">Nghệ sĩ</h2>
+					<div class="p-artist__wrap guest">
+						<div class="guest-item">
+							<div class="img">
+								<img alt="Singer" loading="lazy" srcset="./assets/images/staff_1.webp 1x, ./assets/images/staff_1.webp 2x" src="./assets/images/staff_1.webp">
+							</div>
+						</div>
+						<div class="guest-item">
+							<div class="img">
+								<img alt="Singer" loading="lazy" srcset="./assets/images/staff_2.webp 1x, ./assets/images/staff_2.webp 2x" src="./assets/images/staff_2.webp">
+							</div>
+						</div>
+						<div class="guest-item">
+							<div class="img">
+								<img alt="Singer" loading="lazy" srcset="./assets/images/staff_3.webp 1x, ./assets/images/staff_3.webp 2x" src="./assets/images/staff_3.webp">
+							</div>
+						</div>
+						<div class="guest-item">
+							<div class="img">
+								<img alt="Singer" loading="lazy" srcset="./assets/images/staff_4.webp 1x, ./assets/images/staff_4.webp 2x" src="./assets/images/staff_4.webp">
+							</div>
+						</div>
+						<div class="guest-item">
+							<div class="img">
+								<img alt="Singer" loading="lazy" srcset="./assets/images/staff_5.webp 1x, ./assets/images/staff_5.webp 2x" src="./assets/images/staff_5.webp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div id="guide" class="p-sec p-guide">
+				<div class="container">
+					<h2 class="hline02 text-center text-uppercase mb-36">Câu hỏi thường gặp</h2>
+					<div class="arr">
+						<div class="arr-item">
+							<div class="arr-head">
+								<h3>Quy định về phát hành vé</h3>
+							</div>
+							<div class="arr-body">
+								<div class="arr-content">
+									<ul>
+										<li>
+											<p><strong>1. Mua vé chính thức</strong></p>
+											<p>- Vé sự kiện "Mùa Đông Moscow 2024" được bán độc quyền trên website chính thức: https://muadongmoscow.ru/checkout.</p>
+											<p>- Khách hàng không nên mua vé từ bất kỳ nguồn nào khác ngoài website chính thức để tránh các rủi ro như mua phải vé giả, bị lừa đảo hoặc mất thông tin cá nhân.</p>
+											<p>- BTC không chịu trách nhiệm giải quyết các vấn đề phát sinh từ việc mua vé ngoài kênh chính thức.</p>
 
-	<footer class="p-footer">
+											<p class="pt-2"><strong>2. Giá vé và quy định đặc biệt</strong></p>
+											<p>- Vé VIP 1: 9.500 RUB/người - Vị trí ưu tiên, mang đến trải nghiệm tốt nhất trong không gian sự kiện.</p>
+											<p>- Vé VIP 3: 7.500 RUB/người - Vị trí thuận tiện, đảm bảo một trải nghiệm tuyệt vời.</p>
+											<p>- Vé dành cho trẻ em từ 12 đến 18 tuổi: 7.000 RUB/người. </p>
 
-	</footer>
+											<p class="pt-2"><strong>3. Phương thức phát hành vé</strong></p>
+											<p>- Tất cả vé sự kiện được phát hành dưới dạng mã QR điện tử và sẽ được gửi tới khách hàng sau khi thanh toán thành công.</p>
+											<p>- Mỗi mã QR là duy nhất, chỉ được sử dụng một lần duy nhất để check-in tham dự sự kiện. Vé không thể tái sử dụng hoặc chuyển nhượng sau khi đã check-in.</p>
+											<p>- Vé không thể tái sử dụng hoặc chuyển nhượng sau khi đã check-in thành công.</p>
+
+											<p class="pt-2"><strong>4. Quy định về bảo mật mã QR</strong></p>
+											<p>- Khách hàng có trách nhiệm bảo mật tuyệt đối mã QR trên vé điện tử. </p>
+											<p>- Nếu có nhiều hơn một người sử dụng cùng một mã QR để check-in, BTC chỉ công nhận người đầu tiên check-in thành công là hợp lệ.</p>
+											<p>- Vui lòng không để lộ mã QR hoặc để mã vé bị sao chép dưới bất kỳ hình thức nào.</p>
+
+											<p class="pt-2"><strong style="margin-top: 10px;">5. Hỗ trợ khách hàng</strong></p>
+											<p>- Trong trường hợp phát sinh vấn đề liên quan đến vé, khách hàng vui lòng liên hệ tổng đài hỗ trợ của BTC: +7 (910) 005-45-19 . </p>
+											<p>- Thời gian hỗ trợ: Từ *09:00 đến 22:00 * (giờ Moscow), từ thứ Hai đến thứ Sáu. </p>
+											<p>- BTC cam kết hỗ trợ, giải đáp mọi thắc mắc liên quan đến mua vé, sử dụng vé và các vấn đề kỹ thuật một cách nhanh chóng và hiệu quả. </p>
+											<p>Hãy nhanh tay đặt vé và tận hưởng các ưu đãi hấp dẫn tại sự kiện "Mùa Đông Moscow 2024"! Chúng tôi rất mong được đón tiếp bạn tại không gian ấm cúng và sôi động của sự kiện.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	
+		<footer class="p-footer">
+	
+		</footer>
+	</div>
 
 	<script src="./assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
+	<script>
+		var swiper = new Swiper(".swiper-cards", {
+			effect: "cards",
+			grabCursor: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+		});
+	</script>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+.hline02 {
+    color: $white;
+    font-weight: $font-weight-bold;
+
+    @include mq('lg', min) {
+        font-size: rem(36px);
+        margin-bottom: rem(16px);
+    }
+}
