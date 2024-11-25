@@ -1,5 +1,76 @@
-.page-header {
+.p-header {
+    padding-top: rem(10px);
 
+    &__wrap {
+        display: flex;
+        align-items: center;
+        
+        @include mq('lg', min) {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        .list-logo {
+            display: flex;
+            gap: rem(12px);
+            align-items: center;
+            margin-top: rem(10px);
+
+            &__item {
+                object-fit: cover;
+
+                @include mq('lg', min) {
+                    height: rem(40px);
+                }
+
+                &:nth-child(2), &:nth-child(3) {
+                    @include mq('lg', min) {
+                        height: rem(64px);
+                    }
+                }
+
+                &:nth-child(1) {
+                    aspect-ratio: 968 / 285;
+                }
+                
+                &:nth-child(2) {
+                    aspect-ratio: 1280/817;
+                }
+
+                &:nth-child(3) {
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+    }
+    
+    &__nav {
+        display: none;
+
+        @include mq('lg', min) {
+            display: block;
+        }
+
+        .menu {
+            &-list {
+                @include mq("lg", min) {
+                    display: flex;
+                    gap: rem(40px);
+                    align-items: center;
+                }
+            }
+
+            &-link {
+                font-size: rem(20px);
+                font-weight: $font-weight-bold;
+
+                @include mq("lg", min) {
+                    font-size: rem(20px);
+                }
+            }
+        }
+    }
 }
 
 .hamburger-box {
