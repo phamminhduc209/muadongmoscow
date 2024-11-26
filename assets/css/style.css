@@ -1240,6 +1240,28 @@ input[type=month].form-control {
 	margin-bottom: 2rem;
 }
 
+.arr-item__head {
+	border-bottom: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.p-map__wrap {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.p-map__item {
+	flex: 1;
+}
+
+.p-map__item .map iframe {
+	width: 100%;
+	height: 100%;
+}
+
 @media (min-width: 460px) {
 
 .d-sm-none {
@@ -2611,6 +2633,23 @@ input[type=month].form-control {
 
 .p-artist .guest-item {
 	aspect-ratio: 130/340;
+}
+
+.arr-item__head {
+	padding-bottom: 1rem;
+}
+
+.arr-item__content {
+	padding-top: 2.4rem;
+}
+
+.arr-item__content p {
+	font-size: 1.8rem;
+	margin-top: 1.2rem;
+}
+
+.p-map__item .map {
+	height: 45rem;
 }
 
 }

@@ -40,7 +40,6 @@
     &__content {
         @include mq('lg', min) {
             width: auto;
-            // max-height: 32vh;
         }
 
         .media {
@@ -213,8 +212,55 @@
             margin-bottom: rem(20px);
         }
 
-        &-head {
-            
+        &__head {
+            border-bottom: 1px solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mq('md', min) {
+                padding-bottom: rem(10px);
+            }
+        }
+
+        &__body {
+            // display: none;
+        }
+
+        &__content {
+            @include mq('md', min) {
+                padding-top: rem(24px);
+            }
+
+            p {
+                @include mq('md', min) {
+                    font-size: rem(18px);
+                    margin-top: rem(12px);
+                }
+            }
+        }
+    }
+}
+
+.p-map {
+    &__wrap {
+        display: flex;
+        align-items: center;
+        gap: rem(20px);
+    }
+
+    &__item {
+        flex: 1;
+        
+        .map {
+            @include mq('md', min) {
+                height: rem(450px);
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
