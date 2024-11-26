@@ -1,3 +1,7 @@
+.relative {
+    position: relative;
+}
+
 .object-cover {
     object-fit: cover;
 }
@@ -34,6 +38,7 @@
         img {
             object-fit: cover;
             aspect-ratio: 784 / 927;
+            width: 100%;
         }
     }
 
@@ -121,6 +126,10 @@
 }
 
 .p-artist {
+    .hline02 {
+        margin-bottom: rem(80px);
+    }
+
     .guest {
         display: flex;
         align-items: center;
@@ -173,7 +182,7 @@
                     left: -25%;
                 }
             }
-            
+
             &:nth-child(2n) {
                 transform: skew(-6deg) translateY(20px);
                 z-index: 3;
@@ -214,17 +223,39 @@
 
         &__head {
             border-bottom: 1px solid $white;
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             @include mq('md', min) {
-                padding-bottom: rem(10px);
+                padding-bottom: rem(5px);
+            }
+
+            .ic {
+                width: rem(50px);
+                height: rem(50px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::before {
+                    content: "+";
+                    font-size: rem(20px);
+                }
+            }
+
+            &.is-open {
+                .ic {
+                    &::before {
+                        content: "-";
+                    }
+                }
             }
         }
 
         &__body {
-            // display: none;
+            display: none;
         }
 
         &__content {
@@ -251,16 +282,202 @@
 
     &__item {
         flex: 1;
-        
+
         .map {
             @include mq('md', min) {
-                height: rem(450px);
+                height: rem(420px);
             }
 
             iframe {
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+}
+
+.p-checkout {
+    color: $dark;
+    position: relative;
+
+    &__parallax {
+        background-attachment: fixed;
+        background-image: url(../images/banner_fb.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 50vw;
+        width: 100%;
+    }
+
+    &__content {
+        background-color: $white;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: rem(20px);
+    }
+
+    &__dt {
+        width: calc(100% - #{rem(310px)});
+
+        .lst-dt {
+            &__item {
+                font-size: rem(18px);
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgb(209, 213, 219);
+                    margin-bottom: rem(20px);
+                    padding-bottom: rem(20px);
+                }
+            }
+
+            &__time {
+                font-size: rem(16px);
+            }
+
+            &__content {
+                .item {
+                    font-size: rem(14px);
+                    display: flex;
+                    gap: rem(50px);
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgb(209, 213, 219);
+                        margin-bottom: rem(20px);
+                        padding-bottom: rem(20px);
+                    }
+                }
+
+                ul {
+                    li {
+                        font-size: rem(14px);
+                        position: relative;
+                        display: flex;
+                        gap: rem(8px);
+                        text-align: justify;
+
+                        &:not(:last-child) {
+                            margin-bottom: rem(4px);
+                        }
+
+                        &::before {
+                            content: "";
+                            background-color: $dark;
+                            border-radius: 50%;
+                            flex: 0 0 rem(4px);
+                            width: rem(4px);
+                            height: rem(4px);
+                            position: relative;
+                            top: rem(8px);
+                        }
+                    }
+                }
+
+                .total {
+                    flex: 0 0 rem(170px);
+                    width: rem(170px);
+                    font-size: rem(14px);
+                    
+                    p {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+    &__side {
+        background-color: rgb(243 244 246);
+        border-radius: .375rem;
+        width: rem(300px);
+        padding: rem(16px);
+    }
+}
+
+.qtySelector {
+    border: 1px solid #ddd;
+    border-radius: rem(4px);
+    width: 107px;
+    height: 35px;
+    margin: 10px auto 0;
+}
+
+.qtySelector .fa {
+    padding: 10px 5px;
+    width: 35px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: rem(10px);
+    }
+}
+
+.qtySelector .fa.clicked {
+    font-size: 12px;
+    padding: 12px 5px;
+}
+
+.qtySelector .fa-minus {
+    border-right: 1px solid #ddd;
+}
+
+.qtySelector .fa-plus {
+    border-left: 1px solid #ddd;
+}
+
+.qtySelector .qtyValue {
+    border: none;
+    padding: 5px;
+    width: 35px;
+    height: 100%;
+    float: left;
+    text-align: center
+}
+
+.frm {
+    &-ttl {
+        font-size: rem(16px);
+        font-weight: $font-weight-somibold;
+    }
+
+    &-item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: rem(12px);
+        }
+
+        svg {
+            position: absolute;
+            top: rem(16px);
+            right: rem(16px);
+            width: rem(16px);
+            height: rem(16px);
+        }
+    }
+
+    &-discount {
+        .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &__btn {
+            background-color: $dark;
+            border: none;
+            border-top-right-radius: rem(6px);
+            border-bottom-right-radius: rem(6px);
+            color: $white;
+            cursor: pointer;
+            font-size: rem(14px);
+            white-space: nowrap;
+            padding: 0 rem(10px);
         }
     }
 }

@@ -6,4 +6,8 @@
         font-size: rem(36px);
         margin-bottom: rem(16px);
     }
+
+    &--black {
+        color: $dark;
+    }
 }

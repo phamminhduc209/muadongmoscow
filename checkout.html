@@ -1,11 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Mùa Đông Moscow 2024 là một sự kiện âm nhạc và giải trí đặc biệt dành cho cộng đồng người Việt Nam tại Liên bang Nga, diễn ra vào  ngày 15, 16 và 17 tháng 12 năm 2024 tại Nhà Hàng Cửu Long và trung tâm tiệc Гранат Холл thuộc quần thể chợ Liubilino.">
+	<meta name="keywords" content="Mùa Đông Moscow 2024">
+	<title>Đặt vé</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+	<div class="p-checkout">
+        <div class="p-checkout__parallax"></div>
+        <div class="p-checkout__content py-50">
+            <div class="inner">
+                <div class="p-checkout__wrap">
+                    <div class="p-checkout__dt">
+                        <h2 class="hline02 hline02--black text-center text-uppercase mb-50">Đặt vé</h2>
+                        <div class="lst-dt">
+                            <div class="lst-dt__item">
+                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Cửu long</h3>
+                                <p class="lst-dt__time mt-5">18:00 15/12/2024</p>
+                                <div class="lst-dt__content mt-20">
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí ưu tiên hàng đầu, ngay trước sân khấu, giúp bạn thưởng thức trọn vẹn từng khoảnh khắc biểu diễn.</li>
+                                                <li>Lối vào riêng biệt, giảm thời gian chờ đợi, mang đến sự thoải mái từ khi bạn bước vào sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, gần lối vào chính, tiện lợi và nhanh chóng.</li>
+                                                <li>Bảo vệ nghiêm ngặt, đảm bảo an ninh tối đa cho khu vực VIP.</li>
+                                                <li>Buffet cao cấp, với thực đơn đa dạng gồm các món ăn tinh tế được chế biến bởi các đầu bếp hàng đầu.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi trung tâm, gần sân khấu với tầm nhìn lý tưởng để tận hưởng không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, thuận tiện, đảm bảo chỗ cho bạn.</li>
+                                                <li>Bảo vệ an ninh chuyên nghiệp, giúp bạn hoàn toàn an tâm trong suốt sự kiện.</li>
+                                                <li>Buffet sang trọng, mang đến những món ăn ngon miệng trong không gian ấm cúng và tinh tế.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí phía sau, không gian thoải mái, phù hợp để thư giãn và hòa mình vào không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, đảm bảo bạn dễ dàng tiếp cận địa điểm.</li>
+                                                <li>Dịch vụ an ninh tốt, giúp bạn tận hưởng sự kiện trong sự yên tâm.</li>
+                                                <li>Buffet phong phú, với thực đơn hấp dẫn, phù hợp với mọi khẩu vị.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi phù hợp, an toàn, giúp các bé có không gian thoải mái để vui vẻ tham gia sự kiện.</li>
+                                                <li>Buffet với những món ăn phù hợp và hấp dẫn dành cho trẻ nhỏ.</li>
+                                                <li>Dịch vụ an ninh chu đáo, đảm bảo sự an toàn tuyệt đối cho các bé trong suốt thời gian sự kiện.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lst-dt__item">
+                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 16.12</h3>
+                                <p class="lst-dt__time mt-5">18:00 16/12/2024</p>
+                                <div class="lst-dt__content mt-20">
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí ưu tiên hàng đầu, ngay trước sân khấu, giúp bạn thưởng thức trọn vẹn từng khoảnh khắc biểu diễn.</li>
+                                                <li>Lối vào riêng biệt, giảm thời gian chờ đợi, mang đến sự thoải mái từ khi bạn bước vào sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, gần lối vào chính, tiện lợi và nhanh chóng.</li>
+                                                <li>Bảo vệ nghiêm ngặt, đảm bảo an ninh tối đa cho khu vực VIP.</li>
+                                                <li>Buffet cao cấp, với thực đơn đa dạng gồm các món ăn tinh tế được chế biến bởi các đầu bếp hàng đầu.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi trung tâm, gần sân khấu với tầm nhìn lý tưởng để tận hưởng không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, thuận tiện, đảm bảo chỗ cho bạn.</li>
+                                                <li>Bảo vệ an ninh chuyên nghiệp, giúp bạn hoàn toàn an tâm trong suốt sự kiện.</li>
+                                                <li>Buffet sang trọng, mang đến những món ăn ngon miệng trong không gian ấm cúng và tinh tế.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí phía sau, không gian thoải mái, phù hợp để thư giãn và hòa mình vào không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, đảm bảo bạn dễ dàng tiếp cận địa điểm.</li>
+                                                <li>Dịch vụ an ninh tốt, giúp bạn tận hưởng sự kiện trong sự yên tâm.</li>
+                                                <li>Buffet phong phú, với thực đơn hấp dẫn, phù hợp với mọi khẩu vị.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi phù hợp, an toàn, giúp các bé có không gian thoải mái để vui vẻ tham gia sự kiện.</li>
+                                                <li>Buffet với những món ăn phù hợp và hấp dẫn dành cho trẻ nhỏ.</li>
+                                                <li>Dịch vụ an ninh chu đáo, đảm bảo sự an toàn tuyệt đối cho các bé trong suốt thời gian sự kiện.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lst-dt__item">
+                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 17.12</h3>
+                                <p class="lst-dt__time mt-5">18:00 17/12/2024</p>
+                                <div class="lst-dt__content mt-20">
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí ưu tiên hàng đầu, ngay trước sân khấu, giúp bạn thưởng thức trọn vẹn từng khoảnh khắc biểu diễn.</li>
+                                                <li>Lối vào riêng biệt, giảm thời gian chờ đợi, mang đến sự thoải mái từ khi bạn bước vào sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, gần lối vào chính, tiện lợi và nhanh chóng.</li>
+                                                <li>Bảo vệ nghiêm ngặt, đảm bảo an ninh tối đa cho khu vực VIP.</li>
+                                                <li>Buffet cao cấp, với thực đơn đa dạng gồm các món ăn tinh tế được chế biến bởi các đầu bếp hàng đầu.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi trung tâm, gần sân khấu với tầm nhìn lý tưởng để tận hưởng không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, thuận tiện, đảm bảo chỗ cho bạn.</li>
+                                                <li>Bảo vệ an ninh chuyên nghiệp, giúp bạn hoàn toàn an tâm trong suốt sự kiện.</li>
+                                                <li>Buffet sang trọng, mang đến những món ăn ngon miệng trong không gian ấm cúng và tinh tế.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Vị trí phía sau, không gian thoải mái, phù hợp để thư giãn và hòa mình vào không khí sự kiện.</li>
+                                                <li>Bãi đỗ xe miễn phí, đảm bảo bạn dễ dàng tiếp cận địa điểm.</li>
+                                                <li>Dịch vụ an ninh tốt, giúp bạn tận hưởng sự kiện trong sự yên tâm.</li>
+                                                <li>Buffet phong phú, với thực đơn hấp dẫn, phù hợp với mọi khẩu vị.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <p>Giá vé đã bao gồm: </p>
+                                            <ul class="mt-5">
+                                                <li>Chỗ ngồi phù hợp, an toàn, giúp các bé có không gian thoải mái để vui vẻ tham gia sự kiện.</li>
+                                                <li>Buffet với những món ăn phù hợp và hấp dẫn dành cho trẻ nhỏ.</li>
+                                                <li>Dịch vụ an ninh chu đáo, đảm bảo sự an toàn tuyệt đối cho các bé trong suốt thời gian sự kiện.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="total">
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <div class="qtySelector text-center">
+                                                <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
+                                                <input type="text" class="qtyValue" value="1" />
+                                                <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-header-area>
+                        <div class="p-checkout__side" data-header-nav-area>
+                            <form method="" action="" class="frm">
+                                <h3 class="frm-ttl">Thông tin cá nhân</h3>
+                                <div class="mt-10">
+                                    <div class="frm-item">
+                                        <input value="" type="text" placeholder="Tên" class="form-control">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
+                                            <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
+                                            <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="frm-item">
+                                        <input value="" type="email" placeholder="Email" class="form-control">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 682.667 682.667">
+                                            <defs>
+                                                <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                                    <path d="M0 512h512V0H0Z" data-original="#000000"></path>
+                                                </clipPath>
+                                            </defs>
+                                            <g clip-path="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
+                                                <path fill="none" stroke-miterlimit="10" stroke-width="40" d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z" data-original="#000000"></path>
+                                                <path d="M472 274.9V107.999c0-11.027-8.972-20-20-20H60c-11.028 0-20 8.973-20 20V274.9L0 304.652V107.999c0-33.084 26.916-60 60-60h392c33.084 0 60 26.916 60 60v196.653Z" data-original="#000000"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="frm-item">
+                                        <input value="" type="text" placeholder="Phone No." class="form-control">
+                                        <svg fill="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 64 64">
+                                            <path d="m52.148 42.678-6.479-4.527a5 5 0 0 0-6.963 1.238l-1.504 2.156c-2.52-1.69-5.333-4.05-8.014-6.732-2.68-2.68-5.04-5.493-6.73-8.013l2.154-1.504a4.96 4.96 0 0 0 2.064-3.225 4.98 4.98 0 0 0-.826-3.739l-4.525-6.478C20.378 10.5 18.85 9.69 17.24 9.69a4.69 4.69 0 0 0-1.628.291 8.97 8.97 0 0 0-1.685.828l-.895.63a6.782 6.782 0 0 0-.63.563c-1.092 1.09-1.866 2.472-2.303 4.104-1.865 6.99 2.754 17.561 11.495 26.301 7.34 7.34 16.157 11.9 23.011 11.9 1.175 0 2.281-.136 3.29-.406 1.633-.436 3.014-1.21 4.105-2.302.199-.199.388-.407.591-.67l.63-.899a9.007 9.007 0 0 0 .798-1.64c.763-2.06-.007-4.41-1.871-5.713z" data-original="#000000"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="mt-20">
+                                    <li class="d-flex flex-wrap gap-4 text-sm">
+                                        Tổng tiền 
+                                        <span class="ml-auto">
+                                            <strong>0</strong><small>₽</small>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="frm-discount my-20">
+                                    <div class="d-flex">
+                                        <input value="" type="text" name="discount-code" placeholder="Mã giảm giá" class="form-control">
+                                        <button type="button" class="frm-discount__btn">Áp dụng</button>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" data-v-7b6dc259="">Đặt vé</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <footer class="p-footer pt-50 pb-30">
+        <div class="container">
+            <div class="text-center">
+                <p><a href="mailto:info@muadongmoscow.ru">info@muadongmoscow.ru</a></p>
+                <p class="mt-20">Hotline đặt vé</p>
+                <p class="mt-10"><a href="tel:+89966272577" title="+8 (996) 627-25-77">+8 (996) 627-25-77 - Trung</a></p>
+                <div class="mt-15">Hotline Ban tổ chức</div>
+                <p class="mt-10"><a href="tel:+89857986868" title="+8 (985) 798-68-68">+8 (985) 798-68-68</a></p>
+                <div class="p-footer__copy pt-20">Bản quyền website thuộc về Kongs Production © 2024</div>
+            </div>
+        </div>
+    </footer>
+
+	<button class="btn c-backtop">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg>
+	</button>
+
+	<script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.sticky-kit.min.js"></script>
+	<script src="./assets/js/script.js"></script>
 </body>
+
 </html>

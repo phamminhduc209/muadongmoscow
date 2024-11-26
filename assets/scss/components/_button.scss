@@ -54,4 +54,17 @@
             }
         }
     }
+
+    &-primary {
+        background-color: $dark;
+        border: none;
+        border-radius: rem(6px);
+        color: $white;
+        cursor: pointer;
+        font-size: rem(14px);
+        white-space: nowrap;
+        padding: 0 rem(10px);
+        width: 100%;
+        height: rem(40px);
+    }
 }
