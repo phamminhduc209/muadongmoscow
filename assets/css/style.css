@@ -933,6 +933,14 @@ img.alignleft {
 	height: 4rem;
 }
 
+a {
+	transition: opacity 0.3s ease;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
 .p-header {
 	padding-top: 1rem;
 }
@@ -1334,10 +1342,6 @@ input[type=month].form-control {
 
 .arr-item__head.is-open .ic::before {
 	content: "-";
-}
-
-.arr-item__body {
-	display: none;
 }
 
 .p-map__wrap {

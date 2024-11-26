@@ -68,3 +68,11 @@
         height: rem(40px);
     }
 }
+
+a {
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .7;
+    }
+}
