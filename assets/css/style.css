@@ -20,7 +20,7 @@ html.noscroll {
 body {
 	margin: 0;
 	font-family: Trirong, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	line-height: 1.5;
 	color: #fff;
@@ -160,17 +160,17 @@ img.alignleft {
 
 .container {
 	margin: auto;
-	max-width: 117rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	max-width: 118.8rem;
+	padding-left: 2.4rem;
+	padding-right: 2.4rem;
 	width: 100%;
 }
 
 .inner {
 	margin: auto;
-	max-width: 105.4rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	max-width: 107.2rem;
+	padding-left: 2.4rem;
+	padding-right: 2.4rem;
 	width: 100%;
 }
 
@@ -958,8 +958,14 @@ a:hover {
 }
 
 .p-header__logo .list-logo__item {
+	height: 2.8rem;
 	-o-object-fit: cover;
 	object-fit: cover;
+}
+
+.p-header__logo .list-logo__item:nth-child(2),
+.p-header__logo .list-logo__item:nth-child(3) {
+	height: 4rem;
 }
 
 .p-header__logo .list-logo__item:nth-child(1) {
@@ -1069,7 +1075,7 @@ a:hover {
 	position: fixed;
 	bottom: 5rem;
 	right: 2rem;
-	z-index: 9999;
+	z-index: 1054;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease;
@@ -1091,6 +1097,7 @@ a:hover {
 	padding: 0.5rem 1rem;
 	font-size: 1.4rem;
 	font-weight: 600;
+	font-family: "Nunito", sans-serif;
 	line-height: 1.5;
 	color: #333;
 	background-color: #fff;
@@ -1152,6 +1159,14 @@ input[type=month].form-control {
 	color: #000;
 }
 
+.font-nunito {
+	font-family: "Nunito", sans-serif;
+}
+
+.cl-gray {
+	color: rgb(107, 114, 128);
+}
+
 .relative {
 	position: relative;
 }
@@ -1175,16 +1190,16 @@ input[type=month].form-control {
 	background-color: rgba(17, 24, 39, 0.65);
 }
 
-.p-mv__wrap {
-	position: relative;
-	display: flex;
-}
-
 .p-mv__media img {
 	-o-object-fit: cover;
 	object-fit: cover;
 	aspect-ratio: 784/927;
 	width: 100%;
+}
+
+.p-mv__content {
+	width: 75%;
+	margin: 0 auto;
 }
 
 .p-mv__content .media {
@@ -1207,7 +1222,7 @@ input[type=month].form-control {
 
 .p-mv__content .des-dt__txt {
 	color: rgb(195, 255, 157);
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
@@ -1388,6 +1403,7 @@ input[type=month].form-control {
 
 .p-checkout__dt .lst-dt__item {
 	font-size: 1.8rem;
+	font-family: "Nunito", sans-serif;
 }
 
 .p-checkout__dt .lst-dt__item:not(:last-child) {
@@ -1443,6 +1459,10 @@ input[type=month].form-control {
 
 .p-checkout__dt .lst-dt__content .total p {
 	white-space: nowrap;
+}
+
+.p-checkout__dt .lst-dt__content .total small {
+	font-size: 90%;
 }
 
 .p-checkout__side {
@@ -1518,6 +1538,19 @@ input[type=month].form-control {
 	height: 1.6rem;
 }
 
+.frm-payment__ttl {
+	font-size: 1.6rem;
+}
+
+.frm-payment__item {
+	font-size: 1.4rem;
+}
+
+.frm-payment__item .wrap {
+	display: flex;
+	gap: 0.5rem;
+}
+
 .frm-discount .form-control {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
@@ -1533,6 +1566,97 @@ input[type=month].form-control {
 	font-size: 1.4rem;
 	white-space: nowrap;
 	padding: 0 1rem;
+}
+
+.p-popup {
+	background-color: #fff;
+	display: none;
+	width: 100%;
+	padding: 2.4rem 2.4rem;
+}
+
+.p-popup .f-button:hover {
+	outline: none;
+}
+
+.p-popup--artist {
+	background-color: rgba(16, 32, 78, 0.9);
+	padding: 0.8rem 2.4rem;
+}
+
+.p-popup__ttl {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 2.4rem;
+	font-weight: normal;
+	line-height: 1.3333333333;
+	padding-bottom: 0.5rem;
+}
+
+.p-popup__flex {
+	display: flex;
+	gap: 2rem;
+	position: relative;
+	padding: 1.6rem 1rem;
+}
+
+.p-popup__media {
+	flex: 0 0 28.5rem;
+	max-width: 28.5rem;
+	border: 1px solid rgb(29, 78, 216);
+}
+
+.p-popup__media img {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+}
+
+.p-popup__content {
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: normal;
+	line-height: 1.625;
+}
+
+.p-popup__content p {
+	color: #fff;
+	text-align: justify;
+}
+
+.p-checked {
+	font-size: 1.4rem;
+}
+
+.p-checked .ic {
+	width: 5.6rem;
+	margin: 0 auto;
+}
+
+.p-checked .ic svg {
+	fill: #22c55e;
+}
+
+.p-checked .txt {
+	font-size: 1.4rem;
+}
+
+.p-checked .amount {
+	padding: 0.4rem 0.8rem;
+	border-radius: 0.6rem;
+	background-color: rgb(229, 231, 235);
+}
+
+.p-checked .amount--copy {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.p-checked .qrcode {
+	margin: 0 auto;
 }
 
 @media (min-width: 460px) {
@@ -2212,6 +2336,10 @@ input[type=month].form-control {
 }
 
 @media (min-width: 768px) {
+
+body {
+	font-size: 1.6rem;
+}
 
 .d-md-none {
 	display: none !important;
@@ -2904,6 +3032,10 @@ input[type=month].form-control {
 	margin-top: -3.2rem;
 }
 
+.p-mv__content .des-dt__txt {
+	font-size: 2.4rem;
+}
+
 .p-artist .guest-item {
 	aspect-ratio: 130/340;
 }
@@ -2923,6 +3055,19 @@ input[type=month].form-control {
 
 .p-map__item .map {
 	height: 42rem;
+}
+
+.p-popup {
+	max-width: 55rem;
+}
+
+.p-popup--artist {
+	max-width: 114rem;
+	padding: 0.8rem 2.4rem;
+}
+
+.p-checked .qrcode {
+	max-width: 25.6rem;
 }
 
 }
@@ -3633,12 +3778,18 @@ input[type=month].form-control {
 	margin-bottom: 1.6rem;
 }
 
+.p-mv__wrap {
+	position: relative;
+	display: flex;
+}
+
 .p-mv__media {
 	width: 50%;
 }
 
 .p-mv__content {
 	width: auto;
+	margin-left: 5rem;
 }
 
 .p-stage .swiper-cards .swiper-wrapper {
@@ -4328,6 +4479,14 @@ input[type=month].form-control {
 
 .text-xl-center {
 	text-align: center !important;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.p-mv__content {
+	margin-top: -15rem;
 }
 
 }

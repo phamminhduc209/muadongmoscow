@@ -11,8 +11,9 @@
 	<title>Đặt vé</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/fancybox.css" />
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
             <div class="inner">
                 <div class="p-checkout__wrap">
                     <div class="p-checkout__dt">
-                        <h2 class="hline02 hline02--black text-center text-uppercase mb-50">Đặt vé</h2>
+                        <h2 class="hline02 hline02--black text-center text-uppercase mb-50 font-nunito">Đặt vé</h2>
                         <div class="lst-dt">
                             <div class="lst-dt__item">
                                 <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Cửu long</h3>
@@ -278,17 +279,17 @@
                     <div data-header-area>
                         <div class="p-checkout__side" data-header-nav-area>
                             <form method="" action="" class="frm">
-                                <h3 class="frm-ttl">Thông tin cá nhân</h3>
+                                <h3 class="frm-ttl font-nunito">Thông tin cá nhân</h3>
                                 <div class="mt-10">
                                     <div class="frm-item">
-                                        <input value="" type="text" placeholder="Tên" class="form-control">
+                                        <input value="" type="text" name="name" value="" placeholder="Tên" class="form-control">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
                                             <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
                                             <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
                                         </svg>
                                     </div>
                                     <div class="frm-item">
-                                        <input value="" type="email" placeholder="Email" class="form-control">
+                                        <input value="" type="email" name="email" value="" placeholder="Email" class="form-control">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 682.667 682.667">
                                             <defs>
                                                 <clipPath id="a" clipPathUnits="userSpaceOnUse">
@@ -302,14 +303,14 @@
                                         </svg>
                                     </div>
                                     <div class="frm-item">
-                                        <input value="" type="text" placeholder="Phone No." class="form-control">
+                                        <input value="" type="text" name="phoen" value="" placeholder="Phone No." class="form-control">
                                         <svg fill="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 64 64">
                                             <path d="m52.148 42.678-6.479-4.527a5 5 0 0 0-6.963 1.238l-1.504 2.156c-2.52-1.69-5.333-4.05-8.014-6.732-2.68-2.68-5.04-5.493-6.73-8.013l2.154-1.504a4.96 4.96 0 0 0 2.064-3.225 4.98 4.98 0 0 0-.826-3.739l-4.525-6.478C20.378 10.5 18.85 9.69 17.24 9.69a4.69 4.69 0 0 0-1.628.291 8.97 8.97 0 0 0-1.685.828l-.895.63a6.782 6.782 0 0 0-.63.563c-1.092 1.09-1.866 2.472-2.303 4.104-1.865 6.99 2.754 17.561 11.495 26.301 7.34 7.34 16.157 11.9 23.011 11.9 1.175 0 2.281-.136 3.29-.406 1.633-.436 3.014-1.21 4.105-2.302.199-.199.388-.407.591-.67l.63-.899a9.007 9.007 0 0 0 .798-1.64c.763-2.06-.007-4.41-1.871-5.713z" data-original="#000000"></path>
                                         </svg>
                                     </div>
                                 </div>
                                 <ul class="mt-20">
-                                    <li class="d-flex flex-wrap gap-4 text-sm">
+                                    <li class="d-flex font-nunito">
                                         Tổng tiền 
                                         <span class="ml-auto">
                                             <strong>0</strong><small>₽</small>
@@ -319,10 +320,42 @@
                                 <div class="frm-discount my-20">
                                     <div class="d-flex">
                                         <input value="" type="text" name="discount-code" placeholder="Mã giảm giá" class="form-control">
-                                        <button type="button" class="frm-discount__btn">Áp dụng</button>
+                                        <button type="button" class="frm-discount__btn font-nunito">Áp dụng</button>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary" data-v-7b6dc259="">Đặt vé</button>
+                                <div class="frm-payment my-20">
+                                    <p class="frm-payment__ttl font-nunito mb-5"><strong>Chọn phương thức thánh toán:</strong></p>
+                                    <div class="frm-payment__item">
+                                        <div class="wrap">
+                                            <input type="radio" id="payment1" name="payment" value="transfer" checked>
+                                            <label for="payment1" class="font-nunito">Chuyển khoản qua ngân hàng</label>
+                                        </div>
+                                    </div>
+                                    <div class="frm-payment__item">
+                                        <div class="wrap">
+                                            <input type="radio" id="payment2" name="payment" value="agency">
+                                            <label for="payment2" class="font-nunito">Qua Agency</label>
+                                        </div>
+                                        <div class="child-div" id="agency">
+                                            <p class="font-nunito mt-5">Địa điểm nhận tại chợ Luiblino</p>
+                                            <select name="" id="" class="form-control font-nunito mt-5 mb-10">
+                                                <option value="op1" selected>Nhà hàng Thăng Long - C.Thêu</option>
+                                                <option value="op2">BBQ Việt Nam cửa 3 tầng 1 chợ Luiblino - Ngọc quầy bar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="frm-payment__item">
+                                        <div class="wrap">
+                                            <input type="radio" id="payment3" name="payment" value="cash">
+                                            <label for="payment3" class="font-nunito">Tiền mặt</label>
+                                        </div>
+                                        <div class="child-div" id="cash">
+                                            <p class="font-nunito mt-5">Nhập địa chỉ của bạn</p>
+                                            <input type="text" name="address" value="" class="form-control font-nunito mt-5" placeholder="Nhập địa chỉ của bạn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary font-nunito" data-fancybox data-src="#dialog-checkout1">Đặt vé</button>
                             </form>
                         </div>
                     </div>
@@ -344,12 +377,71 @@
         </div>
     </footer>
 
+    <div id="dialog-checkout1" class="p-popup">
+		<div class="p-popup__wrap p-checked">
+            <p class="ic">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-14 shrink-0 fill-green-500 inline" viewBox="0 0 512 512"><path d="M383.841 171.838c-7.881-8.31-21.02-8.676-29.343-.775L221.987 296.732l-63.204-64.893c-8.005-8.213-21.13-8.393-29.35-.387-8.213 7.998-8.386 21.137-.388 29.35l77.492 79.561a20.687 20.687 0 0 0 14.869 6.275 20.744 20.744 0 0 0 14.288-5.694l147.373-139.762c8.316-7.888 8.668-21.027.774-29.344z" data-original="#000000"></path><path d="M256 0C114.84 0 0 114.84 0 256s114.84 256 256 256 256-114.84 256-256S397.16 0 256 0zm0 470.487c-118.265 0-214.487-96.214-214.487-214.487 0-118.265 96.221-214.487 214.487-214.487 118.272 0 214.487 96.221 214.487 214.487 0 118.272-96.215 214.487-214.487 214.487z" data-original="#000000"></path></svg>
+            </p>
+			<p class="text-center font-nunito"><strong>Đặt Vé Thành Công</strong></p>
+            <p class="text-center txt font-nunito cl-gray mt-10">Hệ thống của chúng tôi đang xử lý và sẽ phản hồi ngay khi đơn đặt vé của bạn được xác nhận. Kiểm tra email của bạn để xem thông tin chi tiết.</p>
+            <p class="text-uppercase text-center mt-10 font-nunito">Vui lòng thanh toán <strong class="amount">44500<small>₽</small></strong></p>
+            <div class="describe text-center mt-15">
+                <p class="text-uppercase text-center font-nunito mb-5">Với nội dung chuyển khoản:</p>
+                <strong class="amount font-nunito">OV37</strong>
+                <button class="amount amount--copy font-nunito">Copy</button>
+            </div>
+            <div class="detail mt-15">
+                <p class="text-uppercase text-center mt-5 font-nunito">Số tài khoản: <strong>2202208318460384</strong> <button class="amount amount--copy font-nunito">Copy</button></p>
+                <p class="text-uppercase text-center mt-5 font-nunito">Tên chủ tài khoản: <strong>Тхао Н.</strong> <button class="amount amount--copy font-nunito">Copy</button></p>
+                <p class="text-uppercase text-center mt-5 font-nunito">Hoặc qr code sau:</p>
+                <div class="mt-5 qrcode"><img alt="QR Code" srcset="./assets/images/qr.jpeg 1x, ./assets/images/qr.jpeg 2x" class="w-64 h-64" src="./assets/images/qr.jpeg"></div>
+                <div class="mt-20 font-nunito">
+                    <button type="button" data-fancybox data-src="#dialog-confirm" class="btn btn-primary">Xác nhận đã chuyển khoản</button>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <div id="dialog-checkout2" class="p-popup">
+		<div class="p-popup__wrap p-checked">
+            <p class="ic">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-14 shrink-0 fill-green-500 inline" viewBox="0 0 512 512"><path d="M383.841 171.838c-7.881-8.31-21.02-8.676-29.343-.775L221.987 296.732l-63.204-64.893c-8.005-8.213-21.13-8.393-29.35-.387-8.213 7.998-8.386 21.137-.388 29.35l77.492 79.561a20.687 20.687 0 0 0 14.869 6.275 20.744 20.744 0 0 0 14.288-5.694l147.373-139.762c8.316-7.888 8.668-21.027.774-29.344z" data-original="#000000"></path><path d="M256 0C114.84 0 0 114.84 0 256s114.84 256 256 256 256-114.84 256-256S397.16 0 256 0zm0 470.487c-118.265 0-214.487-96.214-214.487-214.487 0-118.265 96.221-214.487 214.487-214.487 118.272 0 214.487 96.221 214.487 214.487 0 118.272-96.215 214.487-214.487 214.487z" data-original="#000000"></path></svg>
+            </p>
+			<p class="text-center font-nunito"><strong>Cảm ơn quý khách!</strong></p>
+            <p class="text-center txt font-nunito cl-gray">Cảm ơn quý khách! húng tôi sẽ kiểm tra và sẽ liên hệ quý khách để xác nhận thanh toán.</p>
+            <p class="text-center txt font-nunito cl-gray mt-20">Nếu cần hỗ trợ thêm, quý khách có thể liên hệ chúng tôi qua hotline:</p>
+            <ul class="text-center mt-5">
+                <li><p class="font-nunito"><a href="tel:+89966272577" title="+8 (996) 627-25-77">+8 (996) 627-25-77 - Trung</a></p></li>
+                <li><p class="font-nunito"><a href="tel:+89857986868" title="+8 (985) 798-68-68">+8 (985) 798-68-68 - Hotline</a></p></li>
+                <li><p><span class="txt font-nunito cl-gray">hoặc email: </span><a href="mailto:info@muadongmoscow.ru">info@muadongmoscow.ru</a></p></li>
+            </ul>
+		</div>
+	</div>
+
+    <div id="dialog-confirm" class="p-popup">
+		<div class="p-popup__wrap p-checked">
+            <p class="ic">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-14 shrink-0 fill-green-500 inline" viewBox="0 0 512 512"><path d="M383.841 171.838c-7.881-8.31-21.02-8.676-29.343-.775L221.987 296.732l-63.204-64.893c-8.005-8.213-21.13-8.393-29.35-.387-8.213 7.998-8.386 21.137-.388 29.35l77.492 79.561a20.687 20.687 0 0 0 14.869 6.275 20.744 20.744 0 0 0 14.288-5.694l147.373-139.762c8.316-7.888 8.668-21.027.774-29.344z" data-original="#000000"></path><path d="M256 0C114.84 0 0 114.84 0 256s114.84 256 256 256 256-114.84 256-256S397.16 0 256 0zm0 470.487c-118.265 0-214.487-96.214-214.487-214.487 0-118.265 96.221-214.487 214.487-214.487 118.272 0 214.487 96.221 214.487 214.487 0 118.272-96.215 214.487-214.487 214.487z" data-original="#000000"></path></svg>
+            </p>
+			<p class="text-center font-nunito"><strong>Cảm ơn quý khách!</strong></p>
+            <p class="text-center txt font-nunito cl-gray mt-10">Cảm ơn quý khách đã thanh toán! Hệ thống của chúng tôi sẽ kiểm tra và vé sẽ được gửi qua email ngay sau khi nhận được thông tin thanh toán từ quý khách.</p>
+            <p class="text-center txt font-nunito cl-gray mt-20">Nếu cần hỗ trợ thêm, quý khách có thể liên hệ chúng tôi qua hotline:</p>
+            <ul class="text-center mt-5">
+                <li><p class="font-nunito"><a href="tel:+89966272577" title="+8 (996) 627-25-77">+8 (996) 627-25-77 - Trung</a></p></li>
+                <li><p class="font-nunito"><a href="tel:+89857986868" title="+8 (985) 798-68-68">+8 (985) 798-68-68 - Hotline</a></p></li>
+                <li><p><span class="txt font-nunito cl-gray">hoặc email: </span><a href="mailto:info@muadongmoscow.ru">info@muadongmoscow.ru</a></p></li>
+            </ul>
+		</div>
+	</div>
+
 	<button class="btn c-backtop">
 		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg>
 	</button>
 
 	<script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/jquery.sticky-kit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./assets/js/jquery.sticky-kit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="./assets/js/script.js"></script>
 </body>
 

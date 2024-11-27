@@ -1,5 +1,5 @@
 // grid
-$grid-gutter-width: 15px !default;
+$grid-gutter-width: 24px !default;
 $container-width: 1140px !default;
 $inner-width: 1024px !default;
 
@@ -29,6 +29,7 @@ $spacers: map-merge((0: 0,
 
 //font
 $font-Trirong: 'Trirong', serif;
+$font-Nunito: 'Nunito', sans-serif;
 
 $font-weight-bold: 700;
 $font-weight-somibold: 600;

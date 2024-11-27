@@ -22,8 +22,10 @@
 
 .p-mv {
     &__wrap {
-        position: relative;
-        display: flex;
+        @include mq('lg', min) {
+            position: relative;
+            display: flex;
+        }
     }
 
     &__media {
@@ -43,8 +45,16 @@
     }
 
     &__content {
+        width: 75%;
+        margin: 0 auto;
+        
+        @include mq('md') {
+            margin-top: rem(-150px);
+        }
+
         @include mq('lg', min) {
             width: auto;
+            margin-left: rem(50px);
         }
 
         .media {
@@ -69,14 +79,20 @@
                     line-height: calc(36 / 30);
                     text-transform: uppercase;
                     text-align: center;
+
+                    @include mq('md', min) {}
                 }
 
                 &__txt {
                     color: rgb(195, 255, 157);
-                    font-size: rem(24px);
+                    font-size: rem(18px);
                     font-weight: $font-weight-somibold;
                     text-transform: uppercase;
                     text-align: center;
+
+                    @include mq('md', min) {
+                        font-size: rem(24px);
+                    }
                 }
 
                 &__copy {
@@ -324,6 +340,7 @@
         .lst-dt {
             &__item {
                 font-size: rem(18px);
+                font-family: $font-Nunito;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid rgb(209, 213, 219);
@@ -381,6 +398,10 @@
                     
                     p {
                         white-space: nowrap;
+                    }
+
+                    small {
+                        font-size: 90%;
                     }
                 }
             }
@@ -461,6 +482,21 @@
             height: rem(16px);
         }
     }
+    
+    &-payment {
+        &__ttl {
+            font-size: rem(16px);
+        }
+        
+        &__item {
+            font-size: rem(14px);
+            
+            .wrap {
+                display: flex;
+                gap: rem(5px);
+            }
+        }
+    }
 
     &-discount {
         .form-control {
@@ -478,6 +514,113 @@
             font-size: rem(14px);
             white-space: nowrap;
             padding: 0 rem(10px);
+        }
+    }
+}
+
+.p-popup {
+    background-color: $white;
+    display: none;
+    width: 100%;
+    padding: rem(24px) rem(24px);
+    
+    @include mq('md', min) {
+        max-width: rem(550px);
+    }
+
+    .f-button {
+        &:hover {
+            outline: none;
+        }
+    }
+
+    &--artist {
+        background-color: rgba(16, 32, 78, .9);
+        padding: rem(8px) rem(24px);
+
+        @include mq('md', min) {
+            max-width: rem(1140px);
+            padding: rem(8px) rem(24px);
+        }
+    }
+
+    &__ttl {
+        border-bottom: 1px solid $white;
+        color: $white;
+        font-size: rem(24px);
+        font-weight: normal;
+        line-height: calc(32 / 24);
+        padding-bottom: rem(5px);
+    }
+
+    &__flex {
+        display: flex;
+        gap: rem(20px);
+        position: relative;
+        padding: rem(16px) rem(10px);
+    }
+
+    &__media {
+        flex: 0 0 rem(285px);
+        max-width: rem(285px);
+        // aspect-ratio: 284 / 554;
+        border: 1px solid rgb(29 78 216);
+
+        img {
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        color: $white;
+        font-size: rem(16px);
+        font-weight: normal;
+        line-height: calc(26 / 16);
+
+        p {
+            color: $white;
+            text-align: justify;
+        }
+    }
+}
+
+.p-checked {
+    font-size: rem(14px);
+
+    .ic {
+        width: rem(56px);
+        margin: 0 auto;
+
+        svg {
+            fill: #22c55e;
+        }
+    }
+
+    .txt {
+        font-size: rem(14px);
+    }
+
+    .amount {
+        padding: rem(4px) rem(8px);
+        border-radius: rem(6px);
+        background-color: rgb(229 231 235);
+
+        &--copy {
+            border: none;
+            background-color: $dark;
+            color: $white;
+            font-size: rem(12px);
+        }
+    }
+    
+    .qrcode {
+        margin: 0 auto;
+
+        @include mq('md', min) {
+            max-width: rem(256px);
         }
     }
 }

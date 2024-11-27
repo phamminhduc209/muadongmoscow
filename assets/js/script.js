@@ -97,6 +97,10 @@ $(document).ready(function () {
 
 	app.init();
 
+	Fancybox.bind('[data-fancybox]', {
+		Thumbs: false,
+	});
+
 	$(window).scroll(function () {
 		if ($(this).scrollTop() >= 200) {
 			$('.c-backtop').addClass('is-visible');
@@ -104,15 +108,14 @@ $(document).ready(function () {
 			$('.c-backtop').removeClass('is-visible');
 		}
 	});
-	
+
 	$('.c-backtop').click(function () {
 		$('body,html').animate({
 			scrollTop: 0
 		}, 'slow');
 	});
 
-	var minVal = 1, maxVal = 20; // Set Max and Min values
-	// Increase product quantity on cart page
+	var minVal = 1, maxVal = 20;
 	$(".increaseQty").on('click', function () {
 		var $parentElm = $(this).parents(".qtySelector");
 		$(this).addClass("clicked");
@@ -125,7 +128,6 @@ $(document).ready(function () {
 		}
 		$parentElm.find(".qtyValue").val(value);
 	});
-	// Decrease product quantity on cart page
 	$(".decreaseQty").on('click', function () {
 		var $parentElm = $(this).parents(".qtySelector");
 		$(this).addClass("clicked");
@@ -137,5 +139,16 @@ $(document).ready(function () {
 			value--;
 		}
 		$parentElm.find(".qtyValue").val(value);
+	});
+
+	$(document).ready(function () {
+		$('.child-div').hide();
+
+		$('input[type="radio"][name="payment"]').on('change', function () {
+			$('.child-div').hide();
+			
+			const selectedValue = $(this).val();
+			$(`#${selectedValue}`).show();
+		});
 	});
 });
