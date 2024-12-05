@@ -1,9 +1,27 @@
 .hline02 {
     color: $white;
+    font-size: rem(20px);
     font-weight: $font-weight-bold;
+    margin-bottom: rem(16px);
 
     @include mq('lg', min) {
         font-size: rem(36px);
+        margin-bottom: rem(16px);
+    }
+
+    &--black {
+        color: $dark;
+    }
+}
+
+.hline03 {
+    color: $white;
+    font-size: rem(18px);
+    font-weight: $font-weight-bold;
+    margin-bottom: rem(16px);
+
+    @include mq('lg', min) {
+        font-size: rem(30px);
         margin-bottom: rem(16px);
     }
 

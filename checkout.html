@@ -20,15 +20,20 @@
 <body>
 	<div class="p-checkout">
         <div class="p-checkout__parallax"></div>
-        <div class="p-checkout__content py-50">
+        <div class="p-checkout__content py-50" id="checkout">
             <div class="inner">
                 <div class="p-checkout__wrap">
                     <div class="p-checkout__dt">
                         <h2 class="hline02 hline02--black text-center text-uppercase mb-50 font-nunito">Đặt vé</h2>
                         <div class="lst-dt">
                             <div class="lst-dt__item">
-                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Cửu long</h3>
-                                <p class="lst-dt__time mt-5">18:00 15/12/2024</p>
+                                <div class="lst-dt__head">
+                                    <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Cửu long</h3>
+                                    <p class="lst-dt__time mt-5">18:00 15/12/2024</p>
+                                    <div class="ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path></svg>
+                                    </div>
+                                </div>
                                 <div class="lst-dt__content mt-20">
                                     <div class="item">
                                         <div>
@@ -45,7 +50,7 @@
                                             <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -64,7 +69,7 @@
                                             <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -83,7 +88,7 @@
                                             <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -98,10 +103,10 @@
                                             </ul>
                                         </div>
                                         <div class="total">
-                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em <br class="d-md-none">(trên 12 tuổi)</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -110,8 +115,13 @@
                             </div>
 
                             <div class="lst-dt__item">
-                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 16.12</h3>
-                                <p class="lst-dt__time mt-5">18:00 16/12/2024</p>
+                                <div class="lst-dt__head">
+                                    <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 16.12</h3>
+                                    <p class="lst-dt__time mt-5">18:00 16/12/2024</p>
+                                    <div class="ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path></svg>
+                                    </div>
+                                </div>
                                 <div class="lst-dt__content mt-20">
                                     <div class="item">
                                         <div>
@@ -128,7 +138,7 @@
                                             <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -147,7 +157,7 @@
                                             <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -166,7 +176,7 @@
                                             <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -181,10 +191,10 @@
                                             </ul>
                                         </div>
                                         <div class="total">
-                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em <br class="d-md-none">(trên 12 tuổi)</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -193,8 +203,13 @@
                             </div>
 
                             <div class="lst-dt__item">
-                                <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 17.12</h3>
-                                <p class="lst-dt__time mt-5">18:00 17/12/2024</p>
+                                <div class="lst-dt__head">
+                                    <h3 class="lst-dt__name">Mùa đông Moscow 2024<br>Nhà hàng Гранат Холл 17.12</h3>
+                                    <p class="lst-dt__time mt-5">18:00 17/12/2024</p>
+                                    <div class="ic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path></svg>
+                                    </div>
+                                </div>
                                 <div class="lst-dt__content mt-20">
                                     <div class="item">
                                         <div>
@@ -211,7 +226,7 @@
                                             <p class="text-center"><strong>9500<small>₽</small><br>Vé VIP 1</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -230,7 +245,7 @@
                                             <p class="text-center"><strong>8500<small>₽</small><br>Vé VIP 2</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -249,7 +264,7 @@
                                             <p class="text-center"><strong>7500<small>₽</small><br>Vé VIP 3</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>
@@ -264,10 +279,10 @@
                                             </ul>
                                         </div>
                                         <div class="total">
-                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em (trên 12 tuổi)</strong></p>
+                                            <p class="text-center"><strong>7000<small>₽</small><br>Vé trẻ em <br class="d-md-none">(trên 12 tuổi)</strong></p>
                                             <div class="qtySelector text-center">
                                                 <p class="fa fa-minus decreaseQty"><img src="./assets/images/minus-svgrepo-com.svg" alt=""></p>
-                                                <input type="text" class="qtyValue" value="1" />
+                                                <input type="text" class="qtyValue" value="0" />
                                                 <p class="fa fa-plus increaseQty"><img src="./assets/images/plus-svgrepo-com.svg" alt=""></p>
                                             </div>
                                         </div>

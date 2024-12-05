@@ -45,8 +45,12 @@
     }
 
     &__content {
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
+
+        @include mq('md', min) {
+            width: 75%;
+        }
         
         @include mq('md') {
             margin-top: rem(-150px);
@@ -74,30 +78,35 @@
             &-dt {
                 &__name {
                     color: rgb(195, 255, 157);
-                    font-size: rem(30px);
+                    font-size: rem(20px);
                     font-weight: $font-weight-bold;
                     line-height: calc(36 / 30);
                     text-transform: uppercase;
                     text-align: center;
 
-                    @include mq('md', min) {}
+                    @include mq('md', min) {
+                        font-size: rem(30px);
+                    }
                 }
 
                 &__txt {
                     color: rgb(195, 255, 157);
-                    font-size: rem(18px);
+                    font-size: rem(16px);
                     font-weight: $font-weight-somibold;
                     text-transform: uppercase;
                     text-align: center;
+                    margin-top: rem(10px);
 
                     @include mq('md', min) {
                         font-size: rem(24px);
+                        margin-top: rem(5px);
                     }
                 }
 
                 &__copy {
                     background-color: rgba(17, 24, 39, .8);
                     border-radius: .25rem;
+                    cursor: pointer;
                     color: $white;
                     font-weight: $font-weight-bold;
                     font-size: rem(12px);
@@ -113,11 +122,17 @@
 
 .p-about {
     &__box {
-        font-size: rem(18px);
+        font-size: rem(14px);
         line-height: rem(28px);
         background-color: rgba(17, 24, 39, .3);
         border-radius: rem(4px);
         padding: rem(16px);
+        text-align: justify;
+
+        @include mq('md', min) {
+            font-size: rem(18px);
+            line-height: rem(28px);
+        }
     }
 }
 
@@ -275,11 +290,15 @@
         }
 
         &__content {
+            padding-top: rem(20px);
+
             @include mq('md', min) {
                 padding-top: rem(24px);
             }
 
             p {
+                margin-top: rem(8px);
+
                 @include mq('md', min) {
                     font-size: rem(18px);
                     margin-top: rem(12px);
@@ -292,14 +311,24 @@
 .p-map {
     &__wrap {
         display: flex;
-        align-items: center;
-        gap: rem(20px);
+        flex-direction: column;
+        gap: rem(40px);
+        
+        @include mq('md', min) {
+            flex-direction: row;
+            align-items: center;
+            gap: rem(20px);
+        }
     }
 
     &__item {
-        flex: 1;
+        @include mq('md', min) {
+            flex: 1;
+        }
 
         .map {
+            height: rem(350px);
+
             @include mq('md', min) {
                 height: rem(420px);
             }
@@ -331,16 +360,27 @@
 
     &__wrap {
         display: flex;
+        flex-direction: column;
         gap: rem(20px);
+
+        @include mq('md', min) {
+            flex-direction: row;
+        }
     }
 
     &__dt {
-        width: calc(100% - #{rem(310px)});
+        @include mq('md', min) {
+            width: calc(100% - #{rem(310px)});
+        }
 
         .lst-dt {
             &__item {
-                font-size: rem(18px);
+                font-size: rem(15px);
                 font-family: $font-Nunito;
+
+                @include mq('md', min) {
+                    font-size: rem(18px);
+                }
 
                 &:not(:last-child) {
                     border-bottom: 1px solid rgb(209, 213, 219);
@@ -350,14 +390,53 @@
             }
 
             &__time {
-                font-size: rem(16px);
+                font-size: rem(14px);
+
+                @include mq('md', min) {
+                    font-size: rem(16px);
+                }
+            }
+
+            &__head {
+                position: relative;
+                cursor: pointer;
+                background-color: rgb(249 250 251);
+                padding: rem(10px) rem(50px) rem(10px) rem(10px);
+
+                .ic {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: rem(20px);
+                    width: rem(20px);
+                    height: rem(20px);
+                    cursor: pointer;
+
+                    svg {
+                        transition: transform .3s ease;
+                    }
+                }
+
+                &.is-open {
+                    .ic {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
             }
 
             &__content {
+                display: none;
+                
                 .item {
                     font-size: rem(14px);
                     display: flex;
-                    gap: rem(50px);
+                    gap: rem(20px);
+                    
+                    @include mq('md', min) {
+                        gap: rem(50px);
+                    }
 
                     &:not(:last-child) {
                         border-bottom: 1px solid rgb(209, 213, 219);
@@ -368,7 +447,7 @@
 
                 ul {
                     li {
-                        font-size: rem(14px);
+                        font-size: rem(12px);
                         position: relative;
                         display: flex;
                         gap: rem(8px);
@@ -376,6 +455,10 @@
 
                         &:not(:last-child) {
                             margin-bottom: rem(4px);
+                        }
+
+                        @include mq('md', min) {
+                            font-size: rem(14px);
                         }
 
                         &::before {
@@ -392,9 +475,15 @@
                 }
 
                 .total {
-                    flex: 0 0 rem(170px);
-                    width: rem(170px);
-                    font-size: rem(14px);
+                    flex: 0 0 rem(80px);
+                    width: rem(80px);
+                    font-size: rem(13px);
+
+                    @include mq('md', min) {
+                        font-size: rem(14px);
+                        flex: 0 0 rem(170px);
+                        width: rem(170px);
+                    }
                     
                     p {
                         white-space: nowrap;
@@ -410,29 +499,39 @@
 
     &__side {
         background-color: rgb(243 244 246);
-        border-radius: .375rem;
-        width: rem(300px);
+        border-radius: rem(4px);
         padding: rem(16px);
+
+        @include mq('md', min) {
+            width: rem(300px);
+        }
     }
 }
 
 .qtySelector {
     border: 1px solid #ddd;
     border-radius: rem(4px);
-    width: 107px;
     height: 35px;
     margin: 10px auto 0;
+
+    @include mq('md', min) {
+        width: rem(107px);
+    }
 }
 
 .qtySelector .fa {
     padding: 10px 5px;
-    width: 35px;
+    width: rem(25px);
     height: 100%;
     float: left;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+
+    @include mq('md', min) {
+        width: rem(35px);
+    }
 
     img {
         width: rem(10px);
@@ -454,11 +553,16 @@
 
 .qtySelector .qtyValue {
     border: none;
+    font-weight: bold;
     padding: 5px;
-    width: 35px;
+    width: rem(25px);
     height: 100%;
     float: left;
-    text-align: center
+    text-align: center;
+
+    @include mq('md', min) {
+        width: rem(35px);
+    }
 }
 
 .frm {
@@ -599,6 +703,14 @@
         }
     }
 
+    .br  {
+        width: 5.6rem;
+        height: 5.6rem;
+        margin: 0 auto 20px;
+        background-color: rgb(254 226 226);
+        border-radius: 50%;
+    }
+
     .txt {
         font-size: rem(14px);
     }
@@ -623,4 +735,8 @@
             max-width: rem(256px);
         }
     }
+}
+
+.fill-red-color {
+	color: rgb(220 38 38);
 }

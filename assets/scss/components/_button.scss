@@ -37,6 +37,9 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        font-size: rem(20px);
+        width: rem(140px);
+        height: rem(66px);
 
         @include mq('md', min) {
             font-size: rem(24px);
