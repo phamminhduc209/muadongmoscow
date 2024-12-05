@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Trirong, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000;
+            position: relative;
+            overflow-x: hidden;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        ol,
+        ul,
+        dl {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        b,
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            background-color: transparent;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: inherit;
+            text-align: -webkit-match-parent;
+        }
+
+        input,
+        button,
+        select,
+        optgroup,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button,
+        input {
+            overflow: visible;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        select {
+            word-wrap: normal;
+        }
+
+        button,
+        [type=button],
+        [type=reset],
+        [type=submit] {
+            -webkit-appearance: button;
+        }
+
+        textarea {
+            overflow: auto;
+            resize: vertical;
+        }
+
+        [type=number]::-webkit-inner-spin-button,
+        [type=number]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type=search] {
+            outline-offset: -2px;
+            -webkit-appearance: none;
+        }
+
+        [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        .aligncenter {
+            text-align: center;
+        }
+
+        .alignright {
+            text-align: right;
+        }
+
+        .alignleft {
+            text-align: left;
+        }
+
+        img.aligncenter {
+            display: block;
+            margin: auto;
+        }
+
+        img.alignright {
+            display: block;
+            margin-left: auto;
+        }
+
+        img.alignleft {
+            display: block;
+            margin-right: auto;
+        }
+
+        .p-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .p-header__info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .p-header__info img {
+            width: 80px;
+        }
+
+        .p-header__ticked__number {
+            font-size: 15px;
+        }
+
+        .p-header__logo {
+            width: 150px;
+        }
+
+        table tr th,
+        table tr td {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-header">
+        <div class="p-header__info">
+            <img src="./assets/images/qrcode.png" alt="">
+            <span style="font-size: 16px;">Bắt đầu<br><strong>18:00<br>17/12/2024.</strong></span>
+        </div>
+        <div class="p-header__ticked">
+            <p>Vé điện tử</p>
+            <p style="font-size: 16px;"><strong>#MDM_GRAND335_1733373346</strong></p>
+        </div>
+        <div class="p-header__logo">
+            <img src="./assets/images/no_rm_logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div style="display: flex; gap: 20px;">
+            <div class="media"><img src="./assets/images/download.png" alt=""></div>
+            <div class="content">
+                <p><strong>Mùa đông Moscow - Nhà hàng Cửu long<br>Белореченская 14, Москва, 109559 (Метро: Люблино)- Cách metro 600m - Tầng 2 Trung tâm thương mại<br>Bắt đầu từ 18:00 15/12/2024</strong></p>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                    <tr>
+                        <th>Mã vé : </th>
+                        <td>MDM_GRAND335_1733373346</td>
+                    </tr>
+                    <tr>
+                        <th>Hạng vé : </th>
+                        <td><strong>Vé VIP 2</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Mã số ghế : </th>
+                        <td><strong>V2-37</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Tên nguời mua : </th>
+                        <td><strong>AAAA</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Email nguời mua : </th>
+                        <td><strong>minhducpham.it@gmail.com</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <p style="border: 1px solid #000; border-radius: 10px; padding: 10px; font-size: 15px;"><span style="color: red;">Mã số vé của bạn : </span><strong>MDM_GRAND335_1733373346</strong></p>
+        </div>
+        <div style="margin-top: 10px; border: 1px solid #000; border-radius: 10px; padding: 10px; font-size: 15px;">
+            <p style="color: red;">Chính sách và hướng dẫn :</p>
+            <p>Chính sách hủy đổi: Vé không được hoàn hoặc đổi sau khi mua.<br>Hướng dẫn sử dụng:<br>Vui lòng in vé này hoặc trình bày qua thiết bị di động tại cửa vào.<br>Mang theo giấy tờ tùy thân nếu được yêu cầu.<br>Hướng dẫn sử dụng:<br>Vui lòng in vé này hoặc trình bày qua thiết bị di động tại cửa vào.</p>
+        </div>
+        <div style="margin-top: 10px; border: 1px solid #000; border-radius: 10px; padding: 10px; font-size: 15px;">
+            <p style="color: red;">Thông tin hỗ trợ:</p>
+            <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ:<br>Số điện thoại: +8 (996) 627-25-77 - Trung<br>Email: <a href="mailto:info@muadongmoscow.ru">info@muadongmoscow.ru</a></p>
+        </div>
+    </main>
+    <footer style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="./assets/images/qrcode.png" alt="">
+        </div>
+        <img src="./assets/images/no_rm_logo.png" width="150" alt="">
+    </footer>
+</body>
+</html>
