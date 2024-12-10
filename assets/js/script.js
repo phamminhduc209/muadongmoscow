@@ -5,8 +5,8 @@ let scrollTop,
 app.init = function () {
   app.tab();
   app.anchorLink();
-  app.arr();
   app.sticky();
+  app.arr();
 };
 
 app.tab = function () {
@@ -78,10 +78,11 @@ app.arr = function () {
     $(this).toggleClass("is-open");
     $(this).next(".js-arr-body").stop().slideToggle();
   });
-
+  
   $('.lst-dt__head').on('click', function () {
-		$(this).toggleClass('is-open');
+    $(this).toggleClass('is-open');
 		$(this).next('.lst-dt__content').stop().slideToggle();
+    app.sticky();
 	});
 };
 

@@ -1023,10 +1023,12 @@ a:hover {
 .p-header__wrap {
 	display: flex;
 	align-items: center;
+	gap: 3rem;
 }
 
 .p-header__logo .list-logo {
 	display: flex;
+	justify-content: center;
 	gap: 1.2rem;
 	align-items: center;
 	margin-top: 1rem;
@@ -1036,22 +1038,19 @@ a:hover {
 	height: 2.8rem;
 	-o-object-fit: cover;
 	object-fit: cover;
+	text-align: center;
 }
 
-.p-header__logo .list-logo__item:nth-child(2),
-.p-header__logo .list-logo__item:nth-child(3) {
+.p-header__logo .list-logo__item.--pm,
+.p-header__logo .list-logo__item.--kong {
 	height: 4rem;
 }
 
-.p-header__logo .list-logo__item:nth-child(1) {
-	aspect-ratio: 968/285;
-}
-
-.p-header__logo .list-logo__item:nth-child(2) {
+.p-header__logo .list-logo__item.--pm {
 	aspect-ratio: 1280/817;
 }
 
-.p-header__logo .list-logo__item:nth-child(3) {
+.p-header__logo .list-logo__item.--kong {
 	aspect-ratio: 1/1;
 }
 
@@ -1132,6 +1131,10 @@ a:hover {
 
 .p-footer {
 	background-color: rgb(16, 32, 78);
+}
+
+.p-footer a {
+	color: #FFF;
 }
 
 .p-footer__copy {
@@ -1789,6 +1792,10 @@ input[type=month].form-control {
 
 .p-checked .qrcode {
 	margin: 0 auto;
+}
+
+.p-checked .qrcode img {
+	width: 100%;
 }
 
 .fill-red-color {
@@ -3381,6 +3388,15 @@ body {
 	gap: 5rem;
 }
 
+.p-checkout__dt .lst-dt__content .item.--no-empty {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.p-checkout__dt .lst-dt__content .item div:not(.total) {
+	flex: 1;
+}
+
 .p-checkout__dt .lst-dt__content ul li {
 	font-size: 1.4rem;
 }
@@ -3417,7 +3433,7 @@ body {
 }
 
 .p-checked .qrcode {
-	max-width: 25.6rem;
+	max-width: 35rem;
 }
 
 }
@@ -4168,21 +4184,14 @@ body {
 	text-align: center !important;
 }
 
-.p-header__wrap {
-	justify-content: space-between;
-}
-
-.p-header__logo .list-logo__item {
-	height: 4rem;
-}
-
-.p-header__logo .list-logo__item:nth-child(2),
-.p-header__logo .list-logo__item:nth-child(3) {
-	height: 6.4rem;
+.p-header__logo .list-logo__item.--pm,
+.p-header__logo .list-logo__item.--kong {
+	height: 8rem;
 }
 
 .p-header__nav {
 	display: block;
+	margin-left: auto;
 }
 
 .p-header__nav .menu-list {
