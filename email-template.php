@@ -273,8 +273,8 @@
                                                                         <p style="box-sizing:border-box;margin-top:0;text-align:left;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Karla';font-size:16px;line-height:26px;font-weight:400;color:#666363;margin:0; padding: 0 52px;"
                                                                             align="center">Nếu bạn có bất kỳ câu hỏi
                                                                             nào, vui lòng liên hệ<br>
-                                                                            <strong>Hotline đặt vé: +8 (985) 798-68-68</strong><br>
-                                                                            <strong>Hotline Ban tổ chức: +8 (985) 798-68-68</strong><br>
+                                                                            <strong><a href="tel:+79957204963">Whatsapp/Phone: +7 (995) 720‑49‑63 - Masha</a></strong><br>
+                                                                            <strong><a href="tel:+79775595288">Whatsapp/Phone: +7 (977) 559-52-88 - A.Cường</a><br>
                                                                             <strong>Email: <a href="mailto:info@concertvn.ru" target="_blank">info@concertvn.ru</a></strong>
                                                                         </p>
                                                                     </th>
@@ -313,10 +313,7 @@
                                                                                         style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Karla';font-size:14px;line-height:24px;font-weight:400;color:#a3a1a1;text-transform:none;padding-bottom:13px;padding-top:26px"
                                                                                         align="center"
                                                                                         bgcolor="#ffffff">
-                                                                                        <a href="https://kongs-production.ru/"
-                                                                                            style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';color:#ecba78;text-decoration:none!important;font-size:14px;font-weight:400;text-transform:none"
-                                                                                            target="_blank"
-                                                                                            data-saferedirecturl="https://www.google.com/url?q=https://kongs-production.ru/&amp;source=gmail&amp;ust=1733279729334000&amp;usg=AOvVaw12Nc_1Ek3G-AeLmmxrhq5b">kongs-production.ru</a>
+                                                                                        
                                                                                     </th>
                                                                                 </tr>
                                                                             </tbody>
